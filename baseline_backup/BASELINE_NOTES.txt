@@ -1,0 +1,36 @@
+Intelligent Memory Allocation — Baseline Experiment
+
+Environment:
+- Ubuntu EC2 instance
+- C++17 simulator
+- Strategies: First Fit, Best Fit, Worst Fit, Next Fit
+
+Workloads:
+- Small: 300 requests, 4096 KB, seed 101
+- Medium: 1500 requests, 16384 KB, seed 202
+- Large: 5000 requests, 65536 KB, seed 303
+
+Output files:
+- baseline_summary.csv
+- per_request_results.csv
+- memory_snapshots.csv
+- small.csv
+- medium.csv
+- large.csv
+
+Preliminary findings:
+- Best Fit had the fewest failures at medium and large scales.
+- Next Fit had the lowest total search cost at all three scales.
+- Worst Fit had the most failures and highest mean external fragmentation at all three scales.
+
+Validation performed:
+- 52,378 memory snapshots satisfied free + allocated = configured capacity.
+- All 12 strategy/workload combinations ended with all memory free and one coalesced free block.
+- 2,034 failed requests had consistent failure classifications.
+- 52,378 recorded fragmentation values matched the implemented formula.
+- Summary counts, search costs and latency totals matched per-request records.
+
+Caveat:
+- Allocation timing currently stops after block selection, before block mutation.
+- Next Fit pointer edge cases and zero-lifetime request behavior were identified for further review.
+- These results are baseline-only; HAFS has not yet been evaluated.

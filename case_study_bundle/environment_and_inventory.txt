@@ -1,0 +1,67 @@
+=== Date ===
+2026-10-18T13:40:41+00:00
+
+=== Operating system ===
+PRETTY_NAME="Ubuntu 24.04.4 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.4 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+
+=== Kernel ===
+Linux ip-172-31-13-195 6.17.0-1017-aws #17~24.04.1-Ubuntu SMP Tue May 26 21:30:32 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+
+=== Compiler ===
+g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+Copyright (C) 2023 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+
+=== Workload file hashes ===
+62c3c41bfe4cb028d1ce40045694d3db46d83dd2cc4a0da84c5352e111c3f4ae  workloads/large.csv
+9336e2b5f5691e2d9ece7e0b911625ecb7833ba7c27aa0e69c65f2b19ee71467  workloads/medium.csv
+9a6882467c39f7e4775ab2a08dda67e407ec1c05fa56a0748767e219eca74ded  workloads/small.csv
+
+=== Source and artifact inventory ===
+./add_hafs.py
+./add_transition_logging.py
+./case_study_artifacts/add_hafs.py
+./case_study_artifacts/main_previous_hafs.cpp
+./case_study_artifacts/main_tuned_hafs.cpp
+./case_study_artifacts/tune_hafs.py
+./hafs_allocator
+./hafs_allocator_before_tuning
+./large.csv
+./main.cpp
+./main_before_hafs.cpp
+./main_before_hafs_tuning.cpp
+./main_before_transition_logging.cpp
+./medium.csv
+./results_before_hafs/baseline_summary.csv
+./results_before_hafs/memory_snapshots.csv
+./results_before_hafs/per_request_results.csv
+./results_hafs/baseline_summary.csv
+./results_hafs/memory_snapshots.csv
+./results_hafs/per_request_results.csv
+./results_hafs_logged/baseline_summary.csv
+./results_hafs_logged/memory_snapshots.csv
+./results_hafs_logged/per_request_results.csv
+./results_hafs_logged/policy_transitions.csv
+./results_hafs_tuned/baseline_summary.csv
+./results_hafs_tuned/memory_snapshots.csv
+./results_hafs_tuned/per_request_results.csv
+./results_hafs_tuned/policy_transitions.csv
+./small.csv
+./tune_hafs.py
+./workloads/large.csv
+./workloads/medium.csv
+./workloads/small.csv
