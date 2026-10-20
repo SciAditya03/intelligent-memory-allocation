@@ -184,7 +184,7 @@ This repository supports a college case study. Existing or shared baseline code,
 
 **Individual contribution:** [Describe your actual implementation, integration, experiments, analysis and documentation work.]
 
-**Collaborators:** [Add names and contributions, if applicable.]
+**Collaborators:** Alisha and Aditya
 
 ## References
 
